@@ -22,7 +22,7 @@ class StudentsController < ApplicationController
   end
 
   def update
-    binding.pry
+    # binding.pry
     @student = Student.find(params[:id])
     @student.update(first_name: params[:student][:first_name], last_name: params[:student][:last_name])
     @student.save
