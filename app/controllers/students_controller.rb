@@ -22,6 +22,7 @@ class StudentsController < ApplicationController
   end
 
   def update
+    binding.pry
     @student = Student.find(params[:id])
     redirect_to student_path(@student)
   end
